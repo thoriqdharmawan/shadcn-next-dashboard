@@ -26,10 +26,10 @@ export default function RootLayout({
 
           <MenuNavigation />
 
-          <div className="flex flex-col flex-grow overflow-hidden">
+          <div className="w-9/ flex flex-col flex-grow overflow-hidden">
             <Header />
 
-            <main className="flex-grow overflow-y-auto p-4">
+            <main className="flex-grow overflow-y-auto bg-gray-100 shadow-md">
               {children}
             </main>
           </div>

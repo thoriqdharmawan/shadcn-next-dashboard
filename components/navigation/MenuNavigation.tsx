@@ -12,9 +12,9 @@ export default function MenuNavigation() {
   const { current, setPath } = useNavigation(navigations)
 
   return (
-    <div className='w-1/5 bg-gray-200 p-4 shadow-inner'>
+    <div className='w-3/12 bg-gray-200 p-4 shadow-inner'>
       <div className='flex gap-4 mb-4'>
-        <div className='w-12 h-12 flex items-center justify-center'>
+        <div className='w-8 h-w-8 flex items-center justify-center'>
           <Icon name="chart-bar-outline" className='text-4xl' />
         </div>
 
@@ -29,7 +29,7 @@ export default function MenuNavigation() {
             <div key={nav.title}>
               <div
                 onClick={() => setPath(nav.path)}
-                className='w-12 h-12 flex justify-center items-center cursor-pointer'
+                className='w-8 h-w-8 flex justify-center items-center cursor-pointer'
               >
                 <Icon
                   name={nav.icon}
