@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Balance from "@/components/Statistics/Balance";
 
 const Margin = lazy(() => import("@/components/Statistics/Margin"))
 
@@ -24,7 +25,7 @@ const Wrapper = ({ children }: WrapperProps) => {
 
 export default function Home() {
   return (
-    <div className="my-4 mx-9 box-border"> 
+    <div className="my-4 mx-9 box-border ">
 
       <div className="mb-6">
         <h1 className="text-2xl font-bold">Hi, welcome back!</h1>
@@ -47,18 +48,13 @@ export default function Home() {
           />
         </Wrapper>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>Card Content</p>
-          </CardContent>
-          <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter>
-        </Card>
+        <Balance
+          balance={780560}
+          cardNumber="5345553444545637"
+          cardHolder="Alicia Christensen"
+          accountType="Savings"
+        />
+
         <Card>
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
