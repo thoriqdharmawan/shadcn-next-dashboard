@@ -6,6 +6,7 @@ import { navigations } from '@/lib/constants'
 import { ChildNavigation } from '@/types/global'
 
 import Icon from '../icon'
+import { Fragment } from "react"
 
 export default function MenuNavigation() {
   const { current, setPath } = useNavigation(navigations)
@@ -48,18 +49,15 @@ export default function MenuNavigation() {
           <nav className="mb-4 pl-4 border-l-2 border-gray-400">
             <ul>
               {current?.child?.map((navChild: ChildNavigation, idx) => (
-                <>
-                  <li
-                    key={navChild.path}
-                    className="cursor-pointer py-3 text-sm font-medium select-none"
-                  >
+                <Fragment key={navChild.path}>
+                  <li className="cursor-pointer py-3 text-sm font-medium select-none">
                     {navChild.label}
                   </li>
                   <Separator
                     hidden={current?.child.length === idx + 1}
                     className="bg-gray-400"
                   />
-                </>
+                </Fragment>
               ))}
             </ul>
           </nav>
