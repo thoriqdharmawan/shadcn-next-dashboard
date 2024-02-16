@@ -1,4 +1,4 @@
-import { ReactNode, lazy } from "react";
+import { ReactNode } from "react";
 import {
   Card,
   CardContent,
@@ -7,9 +7,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import Balance from "@/components/Statistics/Balance";
 
-const Margin = lazy(() => import("@/components/Statistics/Margin"))
+import Balance from "@/components/Statistics/Balance";
+import Ratio from "@/components/Statistics/Ratio";
+import Margin from "@/components/Statistics/Margin"
 
 type WrapperProps = {
   children: ReactNode
@@ -55,18 +56,8 @@ export default function Home() {
           accountType="Savings"
         />
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>Card Content</p>
-          </CardContent>
-          <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter>
-        </Card>
+        <Ratio />
+
         <Card>
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
