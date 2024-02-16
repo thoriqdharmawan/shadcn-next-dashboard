@@ -19,6 +19,34 @@ export const navigations: Navigation[] = [
         label: 'Ad Campaign',
         path: '/ad-campaign'
       },
+      {
+        label: 'Event Management',
+        path: '/event-management'
+      },
+      {
+        label: 'Helpdesk Management',
+        path: '/helpdesk-monitoring'
+      },
+      {
+        label: 'Finance Monitoring',
+        path: '/finance-monitoring'
+      },
+      {
+        label: 'Criptocurrency',
+        path: '/criptocurrency'
+      },
+      {
+        label: 'Executive / SaaS',
+        path: '/saas'
+      },
+      {
+        label: 'Campign Monitoring',
+        path: '/campign-monitoring'
+      },
+      {
+        label: 'Product management',
+        path: '/product'
+      },
     ]
   },
   {
@@ -38,18 +66,18 @@ export const navigations: Navigation[] = [
     ]
   },
   {
-    icon: 'calendar-outline',
-    path: '/statistics',
-    title: 'Statistics',
+    icon: 'book',
+    path: '/book',
+    title: 'Book',
     description: 'Choose between layouts to experience difference look and feel for your projects',
     child: [
       {
-        label: 'Statistics menu 1',
-        path: '/statistics-1'
+        label: 'book menu 1',
+        path: '/book-1'
       },
       {
-        label: 'Statistics menu 2',
-        path: '/statistics-2'
+        label: 'book menu 2',
+        path: '/book-2'
       },
     ]
   },

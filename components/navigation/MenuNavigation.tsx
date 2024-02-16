@@ -1,4 +1,5 @@
 "use client"
+import { Separator } from "@/components/ui/separator"
 
 import { useNavigation } from '@/hooks/useNavigation'
 import { navigations } from '@/lib/constants'
@@ -10,7 +11,7 @@ export default function MenuNavigation() {
   const { current, setPath } = useNavigation(navigations)
 
   return (
-    <div className='w-1/5  bg-gray-300 p-4'>
+    <div className='w-1/5 bg-gray-300 p-4'>
       <div className='flex gap-4 mb-4'>
         <div className='w-12 h-12 flex items-center justify-center'>
           <Icon name="chart-bar-outline" className='text-4xl' />
@@ -44,10 +45,21 @@ export default function MenuNavigation() {
             <p className='text-sm font-light'>{current?.description}</p>
           </div>
 
-          <nav className="mb-4 border-l-2 border-gray-400 pl-4">
+          <nav className="mb-4 pl-4 border-l-2 border-gray-400">
             <ul>
-              {current?.child?.map((navChild: ChildNavigation) => (
-                <li key={navChild.path} className="py-2 text-sm font-medium">{navChild.label}</li>
+              {current?.child?.map((navChild: ChildNavigation, idx) => (
+                <>
+                  <li
+                    key={navChild.path}
+                    className="cursor-pointer py-3 text-sm font-medium select-none"
+                  >
+                    {navChild.label}
+                  </li>
+                  <Separator
+                    hidden={current?.child.length === idx + 1}
+                    className="bg-gray-400"
+                  />
+                </>
               ))}
             </ul>
           </nav>
