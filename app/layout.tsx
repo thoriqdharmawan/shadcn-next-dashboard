@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import MenuNavigation from "@/components/navigation/MenuNavigation";
 
 import "./globals.css";
+import 'typicons.font/src/font/typicons.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
