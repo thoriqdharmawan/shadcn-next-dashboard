@@ -12,7 +12,7 @@ export default function MenuNavigation() {
   const { current, setPath } = useNavigation(navigations)
 
   return (
-    <div className='w-1/5 bg-gray-300 p-4'>
+    <div className='w-1/5 bg-gray-200 p-4 shadow-inner'>
       <div className='flex gap-4 mb-4'>
         <div className='w-12 h-12 flex items-center justify-center'>
           <Icon name="chart-bar-outline" className='text-4xl' />
