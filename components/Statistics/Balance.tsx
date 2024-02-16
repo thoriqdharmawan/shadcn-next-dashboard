@@ -40,7 +40,7 @@ export default function Balance(props: BalanceProps) {
         <BalanceItem label="YOUR ACCOUNT NUMBER">
           <p className="text-xl">{censorCreditCardNumber(cardNumber)}</p>
         </BalanceItem>
-        <div className="flex flex-row w-full">
+        <div className="flex flex-col md:flex-row w-full gap-4">
           <BalanceItem className="w-1/2" label="CARD HOLDER">
             <p className="text-lg">{cardHolder}</p>
           </BalanceItem>

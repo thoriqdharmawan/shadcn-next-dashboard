@@ -16,7 +16,7 @@ const RatioItem = (props: RatioItem) => {
   const { icon, title, ratio, goal, decription, color } = props
 
   return (
-    <div className="flex gap-8">
+    <div className="flex flex-col md:flex-row gap-8">
       <Icon className="text-9xl text-gray-300" name={icon} />
       <div>
         <p className="mb-1 text-base font-semibold">{title}</p>

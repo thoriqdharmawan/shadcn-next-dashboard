@@ -45,7 +45,7 @@ const ExpenseItem = (props: ExpenseItem) => {
 
 export default function Expense() {
   return (
-    <div className="grid grid-cols-2 gap-4 h-max">
+    <div className="grid  grid-cols-1 md:grid-cols-2 gap-4 h-max">
       <ExpenseItem title="TOTAL INCOME" balance={8230} comparation={18.2} color="text-purple-700" />
       <ExpenseItem title="TOTAL EXPENSE" balance={32370} comparation={0.7} color="text-blue-500" />
       <ExpenseItem title="ACCOUNTS RECEIVEABLE" balance={9112} comparation={0.8} color="text-cyan-600" />

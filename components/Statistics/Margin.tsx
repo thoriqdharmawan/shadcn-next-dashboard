@@ -39,7 +39,7 @@ function MarginItem(props: MarginProps) {
 }
 export default function Margin() {
   return (
-    <div className="flex justify-between gap-4">
+    <div className="flex flex-col md:flex-row justify-between gap-4">
       <MarginItem
         title="GROSS PROFIT MARGIN"
         description="The profit you make on each dollar of sales for your business"
