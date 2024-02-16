@@ -25,8 +25,8 @@ export default function Margin(props: MarginProps) {
       <CardContent className="flex items-center justify-center">
         <div className="relative w-32 h-32">
           <svg className="absolute inset-0" viewBox="0 0 36 36">
-            <circle className="stroke-current text-gray-300" cx="18" cy="18" r="15.9154943092" fill="transparent" stroke-width="3"></circle>
-            <circle className={`stroke-current ${className}`} cx="18" cy="18" r="15.9154943092" fill="transparent" stroke-width="3" stroke-dasharray={value}></circle>
+            <circle className="stroke-current text-gray-300" cx="18" cy="18" r="15.9154943092" fill="transparent" strokeWidth="3"></circle>
+            <circle className={`stroke-current ${className}`} cx="18" cy="18" r="15.9154943092" fill="transparent" strokeWidth="3" stroke-dasharray={value}></circle>
           </svg>
 
           <div className={`absolute inset-0 flex items-center justify-center text-lg font-semibold ${className}`}>
