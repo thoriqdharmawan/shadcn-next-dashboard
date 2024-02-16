@@ -81,4 +81,68 @@ export const navigations: Navigation[] = [
       },
     ]
   },
+  {
+    icon: 'folder-add',
+    path: '/folder',
+    title: 'Folder',
+    description: 'Choose between layouts to experience difference look and feel for your projects',
+    child: [
+      {
+        label: 'Folder menu 1',
+        path: '/folder-1'
+      },
+      {
+        label: 'Folder menu 2',
+        path: '/folder-2'
+      },
+    ]
+  },
+  {
+    icon: 'chart-line-outline',
+    path: '/chart',
+    title: 'Chart',
+    description: 'Choose between layouts to experience difference look and feel for your projects',
+    child: [
+      {
+        label: 'Chart menu 1',
+        path: '/chart-1'
+      },
+      {
+        label: 'Chart menu 2',
+        path: '/chart-2'
+      },
+    ]
+  },
+  {
+    icon: 'map',
+    path: '/map',
+    title: 'Map',
+    description: 'Choose between layouts to experience difference look and feel for your projects',
+    child: [
+      {
+        label: 'Map menu 1',
+        path: '/map-1'
+      },
+      {
+        label: 'Map menu 2',
+        path: '/map-2'
+      },
+    ]
+  },
+  {
+    icon: 'archive',
+    path: '/archive',
+    title: 'Archive',
+    description: 'Choose between layouts to experience difference look and feel for your projects',
+    child: [
+      {
+        label: 'Archive menu 1',
+        path: '/archive-1'
+      },
+      {
+        label: 'Archive menu 2',
+        path: '/archive-2'
+      },
+    ]
+  },
 ]

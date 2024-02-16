@@ -18,7 +18,7 @@ export default function MenuNavigation() {
           <Icon name="chart-bar-outline" className='text-4xl' />
         </div>
 
-        <div className='flex items-center'>
+        <div className='hidden lg:flex items-center'>
           <h1 className='text-3xl font-bold text-primary'>azia</h1>
         </div>
       </div>
