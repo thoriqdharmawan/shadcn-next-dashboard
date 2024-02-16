@@ -12,18 +12,6 @@ import Balance from "@/components/Statistics/Balance";
 import Ratio from "@/components/Statistics/Ratio";
 import Margin from "@/components/Statistics/Margin"
 
-type WrapperProps = {
-  children: ReactNode
-}
-
-const Wrapper = ({ children }: WrapperProps) => {
-  return (
-    <div className="flex justify-between gap-4">
-      {children}
-    </div>
-  )
-}
-
 export default function Home() {
   return (
     <div className="my-4 mx-9 box-border ">
@@ -34,20 +22,8 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 h-max">
-        <Wrapper>
-          <Margin
-            title="GROSS PROFIT MARGIN"
-            description="The profit you make on each dollar of sales for your business"
-            className="text-purple-700"
-            value={75}
-          />
-          <Margin
-            title="NET PROFIT MARGIN"
-            description="Meassure your business at generating profit"
-            className="text-blue-500"
-            value={68}
-          />
-        </Wrapper>
+
+        <Margin />
 
         <Balance
           balance={780560}

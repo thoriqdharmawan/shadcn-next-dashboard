@@ -13,7 +13,7 @@ type MarginProps = {
   value: number,
 }
 
-export default function Margin(props: MarginProps) {
+function MarginItem(props: MarginProps) {
   const { title, description, value, className } = props
 
   return (
@@ -35,5 +35,23 @@ export default function Margin(props: MarginProps) {
         </div>
       </CardContent>
     </Card>
+  )
+}
+export default function Margin() {
+  return (
+    <div className="flex justify-between gap-4">
+      <MarginItem
+        title="GROSS PROFIT MARGIN"
+        description="The profit you make on each dollar of sales for your business"
+        className="text-purple-700"
+        value={75}
+      />
+      <MarginItem
+        title="NET PROFIT MARGIN"
+        description="Meassure your business at generating profit"
+        className="text-blue-500"
+        value={68}
+      />
+    </div>
   )
 }
