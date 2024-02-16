@@ -1,7 +1,11 @@
+import { Input } from "@/components/ui/input"
+
 export default function Header() {
   return (
-    <header className="bg-gray-200 px-4 py-2">
-      <h1 className="text-lg font-semibold">Admin Panel</h1>
+    <header className="bg-gray-100 px-4 py-2 shadow-md">
+      <h1 className="text-lg font-semibold">
+        <Input />
+      </h1>
     </header>
   )
 }
